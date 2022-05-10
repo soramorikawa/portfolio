@@ -1,0 +1,47 @@
+.navigation--container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #FFF; */
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+}
+.scrolled {
+    position: fixed;
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+    margin-left: 2rem; 
+}
+
+nav {
+    gap: 1rem;
+    width: max-content;
+    display: flex;
+    position: fixed;
+    right: 2rem;
+    /* top: 1.5rem; */
+}
+
+nav a{
+    color: var(--color-navigation);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    height: 2rem;
+    width: 5rem;
+    background-color: var(--color-navigation);
+    color: var(--color-white);
+    border-radius: 0.7rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
