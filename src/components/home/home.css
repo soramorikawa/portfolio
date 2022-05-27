@@ -1,9 +1,12 @@
+#home {
+    height: 100vh;
+}
+
 .home--container {
     display: flex;
     flex-direction: row;
     width: 75%;
     margin: auto;
-    height: 85vh;
 }
 
 .main-text {
@@ -11,13 +14,12 @@
     flex: 1;
     position: relative;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 
 .hello-text {
     color: var(--color-navigation);
     font-size: 5rem;
-    margin-top: 1rem;
 }
 
 .name-text {
@@ -31,7 +33,7 @@
     flex-direction: row;
     /* background-color: black; */
     position: absolute;
-    bottom: 4rem;
+    bottom: 3rem;
     gap: 3rem;
 }
 
@@ -47,6 +49,7 @@
 }
 
 .home-image {
+    margin-top: 8rem;
     flex: 1;
     /* background-color: black; */
     background-image: url("../../assets/about-background.png");
@@ -58,7 +61,6 @@
     height: 30rem;
     width: auto;
     margin-left: 5rem;
-    margin-top: 3rem;
 }
 .circle a {
     display: flex;

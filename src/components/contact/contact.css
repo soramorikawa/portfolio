@@ -1,0 +1,55 @@
+#contact {
+    height: 100vh;
+}
+
+.contact--container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-bottom--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-bottom--container form {
+    background-color: white;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.contact-bottom--container form:hover {
+    box-shadow: 10px 10px var(--color-light);
+}
+
+.input-box input, textarea{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background:transparent;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-bg);
+    color: var(--color-primary-variant);
+}
+
+.input-box input:focus, textarea:focus {
+    border-color: var(--color-primary);
+}
+.submit-btn {
+    background-color: var(--color-primary);
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    border: 2px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+}
