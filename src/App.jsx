@@ -1,19 +1,16 @@
 import React from "react";
-import Nav from "./components/navigation/Nav";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Portfolio from "./components/portfolio/Portfolio";
-import Contact from "./components/contact/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Left from "./components/left/Left";
+import Right from "./components/right/Right";
 
 const App = () => {
   return (
-    <>
-      <Nav />
-      <Home />
-      <About />
-      <Portfolio />
-      <Contact />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Left />}></Route>
+        <Route path="/personal" element={<Right />}></Route>
+      </Routes>
+    </Router>
   );
 };
 
