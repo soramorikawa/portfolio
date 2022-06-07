@@ -1,37 +1,30 @@
 import React from "react";
-import "./nav.css";
+import "./navRight.css";
 import LOGO from "../../assets/logo.png";
 import { useState } from "react";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { BsArrowLeftCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const NavRight = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <div className="big--container">
       <div className="navigation--container">
         <img src={LOGO} alt="Website Logo" className="logo" />
-        <nav className="left-nav">
+        <nav className="right-nav">
           <a
             href="#"
             onClick={() => setActiveNav("#")}
             className={activeNav === "#" ? "active" : ""}
           >
-            Home
+            Favorites
           </a>
           <a
             href="#about"
-            onClick={() => setActiveNav("#about")}
+            onClick={() => setActiveNav("#music")}
             className={activeNav === "#about" ? "active" : ""}
           >
-            About
-          </a>
-          <a
-            href="#portfolio"
-            onClick={() => setActiveNav("#portfolio")}
-            className={activeNav === "#portfolio" ? "active" : ""}
-          >
-            Portfolio
+            Music
           </a>
           <a
             href="#contact"
@@ -43,12 +36,12 @@ const Nav = () => {
         </nav>
       </div>
       <div className="arrow-container">
-        <Link to="/personal">
-          <BsFillArrowRightCircleFill className="arrow-button" />
+        <Link to="/">
+          <BsArrowLeftCircle className="arrow-button-right" />
         </Link>
       </div>
     </div>
   );
 };
 
-export default Nav;
+export default NavRight;

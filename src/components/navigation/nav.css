@@ -33,23 +33,22 @@ nav {
     /* top: 1.5rem; */
 }
 
-nav a{
+.left-nav a{
     color: var(--color-navigation);
     font-size: 1rem;
     padding: 0.3rem 0.7rem;
 }
 
-nav a:hover{
-    /* background-color: var(--color-navigation);
-    color: var(--color-white); */
+.left-nav a:hover{
     background-color: var(--color-bg-variant);
     border-radius: 0.7rem;
     transition: var(--transition);
 }
 
-nav a.active {
+.left-nav a.active {
     background-color: var(--color-bg-variant);
     border-radius: 0.7rem;
+    transition: var(--transition);
 }
 
 .arrow-container {
@@ -57,14 +56,14 @@ nav a.active {
     position: fixed;
     width: 100%;
     /* height: 100vh; */
-    background-color: black;
+    /* background-color: black; */
     top: 45vh;
     /* justify-content: center; */
     
 }
 .arrow-button {
     position: fixed;
-    right: 3rem;
+    right: 2rem;
     height: 3rem;
     width: 3rem;
     color: var(--color-primary)
@@ -74,5 +73,5 @@ nav a.active {
     height: 4rem;
     width: 4rem;
     transition: var(--transition);
-    right: 2rem;
+    right: 1rem;
 }
