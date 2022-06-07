@@ -1,6 +1,6 @@
 #favorites {
     background-color: var(--color-other);
-    height: 200vh;
+    height: 180vh;
 }
 
 .favorites--container {
@@ -22,11 +22,11 @@
 
 .favorites--top-container h5 {
     margin-top: 5rem;
-    color: var(--color-bg);
+    color: var(--color-primary-variant);
 }
 
 .clothing--container {
-    height: 16rem;
+    height: 17rem;
 }
 
 .swiper {
@@ -41,6 +41,7 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    height: 16rem;
   
     /* Center slide text vertically */
     /* display: -webkit-box;
@@ -56,10 +57,16 @@
     -webkit-align-items: center;
     align-items: center; */
   }
+
+  .swiper-slide:hover {
+    box-shadow: 10px 10px var(--color-light);
+    transition: var(--transition);
+  }
   
   .swiper-slide img {
     height: 10rem;
     width: 10rem;
+    object-fit: contain;
   }
 
   .name {
@@ -86,4 +93,17 @@
 
   .link-date h5 {
       color: var(--color-primary-variant);
+  }
+
+  .clothing--container h3 {
+      color: var(--color-bg);
+  }
+
+  .accessories--container {
+      height: 17rem;
+      margin-top: 4rem;
+  }
+
+  .accessories--container h3 {
+      color: var(--color-bg);
   }

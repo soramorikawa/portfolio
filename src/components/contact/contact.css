@@ -23,7 +23,7 @@
 }
 
 .contact-bottom--container form:hover {
-    box-shadow: 10px 10px var(--color-light);
+    box-shadow: 8px 8px var(--color-light);
 }
 
 .input-box input, textarea{
