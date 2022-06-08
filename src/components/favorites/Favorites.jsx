@@ -46,7 +46,9 @@ const Favorites = () => {
                   <img src={img} alt="Avatar One" />
                   <h5 className="name">{name}</h5>
                   <div className="link-date">
-                    <a href={link}>Link</a>
+                    <a href={link} target="_blank">
+                      Link
+                    </a>
                     <h5>{date}</h5>
                   </div>
                 </SwiperSlide>
@@ -79,7 +81,9 @@ const Favorites = () => {
                   <img src={img} alt="Avatar One" />
                   <h5 className="name">{name}</h5>
                   <div className="link-date">
-                    <a href={link}>Link</a>
+                    <a href={link} target="_blank">
+                      Link
+                    </a>
                     <h5>{date}</h5>
                   </div>
                 </SwiperSlide>
@@ -112,7 +116,9 @@ const Favorites = () => {
                   <img src={img} alt="Avatar One" />
                   <h5 className="name">{name}</h5>
                   <div className="link-date">
-                    <a href={link}>Link</a>
+                    <a href={link} target="_blank">
+                      Link
+                    </a>
                     <h5>{date}</h5>
                   </div>
                 </SwiperSlide>
