@@ -53,3 +53,7 @@
     background-color: transparent;
     color: var(--color-primary);
 }
+
+.contact-image {
+    margin-top: 5rem;
+}

@@ -4,7 +4,7 @@ import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { FiDribbble } from "react-icons/fi";
 import { FiFileText } from "react-icons/fi";
-import IMG from "../../assets/tpImage.png";
+import IMG from "../../assets/mainPhoto.png";
 import CV from "../../assets/cv.pdf";
 
 const Home = () => {
@@ -42,6 +42,7 @@ const Home = () => {
         </div>
         <div className="home-image">
           <img src={IMG} alt="" />
+          {/* <div className="random-box"></div> */}
         </div>
       </div>
     </section>

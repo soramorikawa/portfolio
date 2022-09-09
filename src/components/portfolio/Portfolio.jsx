@@ -1,27 +1,29 @@
 import React from "react";
 import "./portfolio.css";
-import IMG from "../../assets/IOU-image.png";
+import IOU from "../../assets/IOU-image.png";
+import personal from "../../assets/website-personal.png";
+import portfolio from "../../assets/website-portfolio.png";
 
 const data = [
   {
     id: 1,
-    image: IMG,
+    image: IOU,
     title: "IOU",
     github: "https://github.com/acm-projects/IOU",
     demo: "https://drive.google.com/file/d/1QrzW9gjkx0yNbAQO-XUdioSXbXLpq-lL/view?usp=sharing",
   },
   {
     id: 2,
-    image: IMG,
-    title: "IOU",
-    github: "https://github.com/acm-projects/IOU",
+    image: personal,
+    title: "Personal Website",
+    github: "https://github.com/soramorikawa/portfolio",
     demo: "https://drive.google.com/file/d/1QrzW9gjkx0yNbAQO-XUdioSXbXLpq-lL/view?usp=sharing",
   },
   {
     id: 3,
-    image: IMG,
-    title: "IOU",
-    github: "https://github.com/acm-projects/IOU",
+    image: portfolio,
+    title: "Portfolio Website",
+    github: "https://github.com/soramorikawa/portfolio",
     demo: "https://drive.google.com/file/d/1QrzW9gjkx0yNbAQO-XUdioSXbXLpq-lL/view?usp=sharing",
   },
 ];

@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "emailjs-com";
 import { GiTexas } from "react-icons/gi";
+import pugGif from "../../assets/pug-gif.gif";
 
 const Contact = () => {
   const form = useRef();
@@ -17,6 +18,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          alert("Email Sent!");
           console.log(result.text);
         },
         (error) => {
@@ -35,7 +37,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-bottom--container">
-          <div className="contact-left--container"></div>
+          <div className="contact-left--container">
+            <div className="contact-image">
+              <img src={pugGif} />
+            </div>
+          </div>
           <form ref={form} onSubmit={sendEmail}>
             <div className="input-box">
               <input type="text" name="name" placeholder="Name" />
@@ -47,7 +53,7 @@ const Contact = () => {
               <input type="text" name="subject" placeholder="Subject" />
             </div>
             <div className="input-box">
-              <textarea placeholder="Your Message" name="message" rows="5" />
+              <textarea placeholder="Your Message :)" name="message" rows="5" />
             </div>
             <div>
               <input

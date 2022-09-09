@@ -42,11 +42,11 @@ const Nav = () => {
           </a>
         </nav>
       </div>
-      <div className="arrow-container">
+      {/* <div className="arrow-container">
         <Link to="/personal">
           <BsFillArrowRightCircleFill className="arrow-button" />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
